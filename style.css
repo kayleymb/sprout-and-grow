@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #fffcf1;
   color: #333;
 }
 
@@ -17,7 +17,7 @@ header {
   justify-content: center; /* Centers the logo horizontally */
   align-items: center;     /* Centers the logo vertically */
   padding: 20px 0;         /* Adds spacing around the header */
-  background-color: #f4f4f4; /* Optional: background color for the header */
+  background-color: #fffcf1; /* Optional: background color for the header */
 }
 
 /* Styling for the logo */
@@ -45,7 +45,7 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-  background-color: #8BC34A;
+  background-color: #8fbd4f;
   padding: 50px;
   text-align: center;
   color: white;
@@ -87,7 +87,7 @@ nav ul li a {
 
 /* Footer Styles */
 footer {
-  background-color: #333;
+  background-color: #054d3b;
   color: white;
   text-align: center;
   padding: 10px;
@@ -119,11 +119,11 @@ form input, form select, form button {
 }
 
 form button {
-  background-color: #4CAF50;
+  background-color: #8fbd4f;
   color: white;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #45a049;
+  background-color: #054d3b;
 }
