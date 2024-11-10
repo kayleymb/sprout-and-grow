@@ -11,11 +11,20 @@ body {
   color: #333;
 }
 
-/* Header Styles */
+/* Styling for the header */
 header {
-  background-color: #4CAF50;
-  padding: 10px 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers the logo horizontally */
+  align-items: center;     /* Centers the logo vertically */
+  padding: 20px 0;         /* Adds spacing around the header */
+  background-color: #f4f4f4; /* Optional: background color for the header */
+}
+
+/* Styling for the logo */
+.logo {
+  width: 524px;   /* Set the logo width */
+  height: 56px;   /* Set the logo height */
+  object-fit: contain; /* Ensures the logo maintains its aspect ratio */
 }
 
 nav ul {
