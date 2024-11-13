@@ -1,128 +1,75 @@
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Basic CSS file for Sprout & Grow website */
+{
+    margin: 0;
+    padding: 0;
+  }
+  
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fffef4;
-  color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    margin: 10%;
 }
-
-/* Styling for the header */
+  
 header {
-  display: flex;
-  justify-content: center; /* Centers the logo horizontally */
-  align-items: center;     /* Centers the logo vertically */
-  padding: 20px 0;         /* Adds spacing around the header */
-  background-color: #fffef4; /* Optional: background color for the header */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px 0;
+    background-color: #ffffff;
 }
-
-/* Styling for the logo */
+  
 .logo {
-  width: 524px;   /* Set the logo width */
-  height: 56px;   /* Set the logo height */
-  object-fit: contain; /* Ensures the logo maintains its aspect ratio */
+    width: 10%;
+    height: auto;
 }
-
+  
 nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
-
+  
 nav ul li {
-  margin: 0 15px;
+    margin: 0 15px;
 }
-
+  
 nav ul li a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
+    color: #2e2e2e;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Hero Section */
 .hero {
-  background-color: #8fbd4f;
-  padding: 50px;
-  text-align: center;
-  color: white;
+    background-color: #0b503f;
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
-
+  
 .hero h1 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
-/* Intro Section */
+.Image1 {
+    padding: 5px;
+    width: 10%;
+    height: auto;
+}
+  
 .intro {
-  padding: 20px;
-  text-align: center;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Products Section */
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 40px;
-}
-
-.product-item {
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.product-item img {
-  width: 100%;
-  height: auto;
-}
-
-.product-item h2 {
-  margin-top: 10px;
-  font-size: 1.5rem;
-}
-
-/* Footer Styles */
 footer {
-  background-color: #054d3b;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+    background-color: #2e2e2e;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
+/* Add specific styles for navigation, main content, images, etc. */
 
-/* Form Styles (for Register Page) */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-  font-size: 1rem;
-}
-
-form input, form select, form button {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-}
-
-form button {
-  background-color: #8fbd4f;
-  color: white;
-  cursor: pointer;
-}
 
 form button:hover {
   background-color: #054d3b;
