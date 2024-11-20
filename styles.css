@@ -1,8 +1,19 @@
-/* Basic CSS file for Sprout & Grow website */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+title {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 10;
+    padding: 30px;
+    background-color: #0b503f;
+    color: #ffffff;
 }
 
 header {
@@ -27,25 +38,67 @@ nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.hero {
-    text-align: center;
+nav a:hover {
+    background-color: #0b503f;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.top {
+      text-align: center;
     padding: 10px;
     background-color: #0b503f;
     color: white;
 }
 
-.Image1 {
+.hero {
+    text-align: center;
+    padding: 30px;
+    background-color: #0b503f;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.image {
     padding: 10px;
     display: block;
-    width: 25%;
-    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+    margin: 20px auto;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .intro {
     padding: 20px;
     text-align: center;
+    background-color: #f9f9f9;
+    margin: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1rem;
 }
 
 footer {
@@ -53,6 +106,80 @@ footer {
     padding: 20px;
     background-color: #0b503f;
     color: #ffffff;
+    margin-top: 20px;
+    font-size: 0.9rem;
 }
 
-/* Add specific styles for navigation, main content, images, etc. */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    background-color: #0b503f;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0e6a50;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Image {
+        width: 80%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
