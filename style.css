@@ -1,76 +1,60 @@
 /* Basic CSS file for Sprout & Grow website */
-{
-    margin: 0;
-    padding: 0;
-  }
-  
+
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
-    color: #333;
-    margin: 10%;
-}
-  
-header {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    padding: 10px 0;
+    line-height: 1.6;
     background-color: #ffffff;
 }
-  
-.logo {
-    width: 10%;
-    height: auto;
-}
-  
-nav ul {
-    list-style-type: none;
+
+header {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
 }
-  
-nav ul li {
-    margin: 0 15px;
+
+.logo {
+    height: 60px;
 }
-  
-nav ul li a {
-    color: #2e2e2e;
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
     text-decoration: none;
+    color: #333;
     font-weight: bold;
 }
 
 .hero {
-    background-color: #0b503f;
-    padding: 10px;
     text-align: center;
+    padding: 10px;
+    background-color: #0b503f;
     color: white;
-}
-  
-.hero h1 {
-    font-size: 2.5rem;
 }
 
 .Image1 {
-    padding: 5px;
-    width: 10%;
-    height: auto;
+    padding: 10px;
+    display: block;
+    width: 25%;
+    margin: 0 auto;
 }
-  
+
 .intro {
     padding: 20px;
     text-align: center;
 }
 
 footer {
-    background-color: #2e2e2e;
-    color: white;
     text-align: center;
-    padding: 5px;
+    padding: 20px;
+    background-color: #0b503f;
+    color: #ffffff;
 }
+
 /* Add specific styles for navigation, main content, images, etc. */
-
-
-form button:hover {
-  background-color: #054d3b;
-}
