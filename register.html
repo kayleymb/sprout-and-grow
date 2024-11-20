@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register for Event - Sprout & Grow</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Sprout & Grow</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="register.html">Register</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="register">
-      <h1>Register for an Event</h1>
-      <form action="#" method="post">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="event">Select Event</label>
-        <select id="event" name="event">
-          <option value="workshop">Spring Gardening Workshop</option>
-          <option value="expo">Eco-Friendly Gardening Expo</option>
-        </select>
-
-        <button type="submit">Register</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Sprout & Grow | All rights reserved.</p>
-  </footer>
+    <header>
+        <img src="images/sprout-logo.png" alt="Sprout & Grow Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Event Registration</h1>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+            <label for="event">Event:</label>
+            <select id="event" name="event">
+                <option value="workshop">Gardening Workshop</option>
+                <option value="sale">Seasonal Sale</option>
+                <option value="meetup">Community Meetup</option>
+            </select>
+            <label>Meal Preference:</label>
+            <input type="radio" id="veg" name="meal" value="veg">
+            <label for="veg">Vegetarian</label>
+            <input type="radio" id="non-veg" name="meal" value="non-veg">
+            <label for="non-veg">Non-Vegetarian</label>
+            <label>Newsletter Subscription:</label>
+            <input type="checkbox" id="updates" name="updates" value="updates">
+            <label for="updates">Receive Updates</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Additional Comments"></textarea>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sprout & Grow</p>
+        <div>
+            <!-- Social Media Links -->
+        </div>
+    </footer>
 </body>
 </html>
