@@ -7,21 +7,16 @@ body {
     color: #333;
 }
 
-title {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 10;
-    padding: 30px;
-    background-color: #0b503f;
-    color: #ffffff;
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    z-index: 10;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #ffffff;
+main {
+    margin-top: 100px;
 }
 
 .logo {
@@ -30,29 +25,53 @@ header {
 
 nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 15px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 8px 12px;
-    transition: background-color 0.3s, color 0.3s;
+nav ul li {
+    position: relative;
+    margin: 0 10px;
 }
 
-nav a:hover {
-    background-color: #0b503f;
-    color: #ffffff;
+nav ul li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+nav ul li:hover ul.submenu {
+    display: block;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
     border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
-.top {
-      text-align: center;
-    padding: 10px;
-    background-color: #0b503f;
-    color: white;
+nav ul li ul li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+nav ul li:hover ul {
+    display: block;
 }
 
 .hero {
@@ -72,12 +91,11 @@ nav a:hover {
 }
 
 .image {
-    padding: 10px;
     display: block;
     max-width: 100%;
     height: auto;
-    width: 50%;
     margin: 20px auto;
+    padding: 10px;
     border: 3px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -111,49 +129,32 @@ footer {
 }
 
 form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;
+    gap: 15px;
 }
 
 form label {
-    display: block;
-    margin-bottom: 8px;
     font-weight: bold;
 }
 
-form input,
-form select,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+form input, form select, form textarea, form button {
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
 }
 
-form textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
 form button {
     background-color: #0b503f;
-    color: #ffffff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
+    color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 form button:hover {
-    background-color: #0e6a50;
+    background-color: #086639;
 }
 
 @media (max-width: 768px) {
@@ -167,7 +168,7 @@ form button:hover {
         gap: 10px;
     }
 
-    .Image {
+    .image {
         width: 80%;
     }
 
@@ -179,6 +180,10 @@ form button:hover {
         font-size: 1rem;
     }
 
+    form {
+        padding: 15px;
+    }
+}
     form {
         padding: 15px;
     }
