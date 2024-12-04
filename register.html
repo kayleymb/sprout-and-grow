@@ -14,40 +14,42 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li>
+                    <a href="events.html">Events</a>
+                    <ul class="submenu">
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </li>                
             </ul>
         </nav>
-    </header>
+    </header>    
     <main>
-      <img src="images/register.jpg" alt="Community Gardening Event" class="image">
       <section class="top">
         <h1>Event Registration</h1>
       </section>
+      <section class="intro">
         <form action="#" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+        
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+        
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone">
+        
             <label for="event">Event:</label>
             <select id="event" name="event">
                 <option value="workshop">Gardening Workshop</option>
                 <option value="sale">Seasonal Sale</option>
                 <option value="meetup">Community Meetup</option>
             </select>
-            <label>Meal Preference:</label>
-            <input type="radio" id="veg" name="meal" value="veg">
-            <label for="veg">Vegetarian</label>
-            <input type="radio" id="non-veg" name="meal" value="non-veg">
-            <label for="non-veg">Non-Vegetarian</label>
-            <label>Newsletter Subscription:</label>
-            <input type="checkbox" id="updates" name="updates" value="updates">
-            <label for="updates">Receive Updates</label>
+            <label for="comments">Additional Comments:</label>
             <textarea id="comments" name="comments" rows="4" placeholder="Additional Comments"></textarea>
             <button type="submit">Register</button>
-        </form>
+        </form>        
+        </section>
+        <img src="images/register.jpg" alt="Community Gardening Event" class="image">
     </main>
     <footer>
          <p>&copy; 2024 Sprout & Grow <!-- Social Media Icons by NiftyButtons https://niftybuttons.com --><div style="display: flex; flex-wrap:wrap; align-items: center; justify-content: center;"><a href="https://sproutandgrow" target="_blank" rel="noopener noreferrer" style="text-decoration:none;border:0;width:20px;height:20px;padding:2px;margin:5px;color:#f3f3f3;border-radius:50%;background-color:#0b503f;"><svg class="niftybutton-facebook" style="display:block;fill:currentColor" data-donate="true" data-tag="fac" data-name="Facebook" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><title>Facebook social icon</title>
