@@ -1,4 +1,4 @@
-body { 
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #ffffff;
@@ -13,7 +13,6 @@ header {
     width: 100%;
     background-color: #f8f8f8;
     z-index: 10;
-    padding: 10px 0;
 }
 
 main {
@@ -22,14 +21,6 @@ main {
 
 .logo {
     height: 60px;
-    margin-left: 20px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 20px;
 }
 
 nav ul {
@@ -41,21 +32,7 @@ nav ul {
 
 nav ul li {
     position: relative;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.1rem;
-    padding: 10px 15px;
-    display: block;
-}
-
-nav ul li a:hover, nav ul li a:focus {
-    color: #0b503f;
-    background-color: #e2e2e2;
-    border-radius: 4px;
+    margin: 0 10px;
 }
 
 nav ul li ul.submenu {
@@ -73,15 +50,73 @@ nav ul li:hover ul.submenu {
     display: block;
 }
 
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
 nav ul li ul li a {
     padding: 10px 15px;
     white-space: nowrap;
-    font-size: 1rem;
-    color: #333;
 }
 
-nav ul li ul li a:hover, nav ul li ul li a:focus {
-    background-color: #f1f1f1;
+nav ul li:hover ul {
+    display: block;
+}
+
+.hero {
+    text-align: center;
+    padding: 30px;
+    background-color: #0b503f;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1rem;
 }
 
 footer {
@@ -91,6 +126,35 @@ footer {
     color: #ffffff;
     margin-top: 20px;
     font-size: 0.9rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form select, form textarea, form button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #0b503f;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #086639;
 }
 
 @media (max-width: 768px) {
